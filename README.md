@@ -6,3 +6,5 @@
 * No safety measures for publishing not privately to github
 	* Not sure what information exists
 * Uses a keybaord extention, ios application, and shared data to communicate between the two applications
+* add presets
+* add optional delete key
