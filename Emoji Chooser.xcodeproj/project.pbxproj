@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		262970C62C47F8CF0060B67C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262970C52C47F8CF0060B67C /* AppDelegate.swift */; };
+		262970C72C47F8CF0060B67C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262970C52C47F8CF0060B67C /* AppDelegate.swift */; };
+		2673D29B2C46B75B009D85FD /* Emoji_ChooserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673D29A2C46B75B009D85FD /* Emoji_ChooserApp.swift */; };
+		2673D29D2C46B75B009D85FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673D29C2C46B75B009D85FD /* ContentView.swift */; };
+		2673D29F2C46B75C009D85FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2673D29E2C46B75C009D85FD /* Assets.xcassets */; };
+		2673D2A22C46B75C009D85FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2673D2A12C46B75C009D85FD /* Preview Assets.xcassets */; };
+		2673D2AF2C46B85F009D85FD /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2673D2AE2C46B85F009D85FD /* KeyboardViewController.swift */; };
+		2673D2B32C46B85F009D85FD /* Emoji Keyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2673D2AC2C46B85F009D85FD /* Emoji Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2673D2B12C46B85F009D85FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2673D28F2C46B75B009D85FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2673D2AB2C46B85F009D85FD;
+			remoteInfo = "Emoji Keyboard";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2673D2B72C46B85F009D85FD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2673D2B32C46B85F009D85FD /* Emoji Keyboard.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		262970BD2C47F2500060B67C /* Emoji Chooser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Emoji Chooser.entitlements"; sourceTree = "<group>"; };
+		262970BE2C47F2C90060B67C /* Emoji Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Emoji Keyboard.entitlements"; sourceTree = "<group>"; };
+		262970C52C47F8CF0060B67C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2673D2972C46B75B009D85FD /* Emoji Chooser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emoji Chooser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2673D29A2C46B75B009D85FD /* Emoji_ChooserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji_ChooserApp.swift; sourceTree = "<group>"; };
+		2673D29C2C46B75B009D85FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2673D29E2C46B75C009D85FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2673D2A12C46B75C009D85FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2673D2AC2C46B85F009D85FD /* Emoji Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Emoji Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2673D2AE2C46B85F009D85FD /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		2673D2B02C46B85F009D85FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2673D2942C46B75B009D85FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2673D2A92C46B85F009D85FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2673D28E2C46B75B009D85FD = {
+			isa = PBXGroup;
+			children = (
+				262970C52C47F8CF0060B67C /* AppDelegate.swift */,
+				2673D2992C46B75B009D85FD /* Emoji Chooser */,
+				2673D2AD2C46B85F009D85FD /* Emoji Keyboard */,
+				2673D2982C46B75B009D85FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2673D2982C46B75B009D85FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2673D2972C46B75B009D85FD /* Emoji Chooser.app */,
+				2673D2AC2C46B85F009D85FD /* Emoji Keyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2673D2992C46B75B009D85FD /* Emoji Chooser */ = {
+			isa = PBXGroup;
+			children = (
+				262970BD2C47F2500060B67C /* Emoji Chooser.entitlements */,
+				2673D29A2C46B75B009D85FD /* Emoji_ChooserApp.swift */,
+				2673D29C2C46B75B009D85FD /* ContentView.swift */,
+				2673D29E2C46B75C009D85FD /* Assets.xcassets */,
+				2673D2A02C46B75C009D85FD /* Preview Content */,
+			);
+			path = "Emoji Chooser";
+			sourceTree = "<group>";
+		};
+		2673D2A02C46B75C009D85FD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2673D2A12C46B75C009D85FD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2673D2AD2C46B85F009D85FD /* Emoji Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				262970BE2C47F2C90060B67C /* Emoji Keyboard.entitlements */,
+				2673D2AE2C46B85F009D85FD /* KeyboardViewController.swift */,
+				2673D2B02C46B85F009D85FD /* Info.plist */,
+			);
+			path = "Emoji Keyboard";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2673D2962C46B75B009D85FD /* Emoji Chooser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2673D2A52C46B75C009D85FD /* Build configuration list for PBXNativeTarget "Emoji Chooser" */;
+			buildPhases = (
+				2673D2932C46B75B009D85FD /* Sources */,
+				2673D2942C46B75B009D85FD /* Frameworks */,
+				2673D2952C46B75B009D85FD /* Resources */,
+				2673D2B72C46B85F009D85FD /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2673D2B22C46B85F009D85FD /* PBXTargetDependency */,
+			);
+			name = "Emoji Chooser";
+			productName = "Emoji Chooser";
+			productReference = 2673D2972C46B75B009D85FD /* Emoji Chooser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2673D2AB2C46B85F009D85FD /* Emoji Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2673D2B42C46B85F009D85FD /* Build configuration list for PBXNativeTarget "Emoji Keyboard" */;
+			buildPhases = (
+				2673D2A82C46B85F009D85FD /* Sources */,
+				2673D2A92C46B85F009D85FD /* Frameworks */,
+				2673D2AA2C46B85F009D85FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Emoji Keyboard";
+			productName = "Emoji Keyboard";
+			productReference = 2673D2AC2C46B85F009D85FD /* Emoji Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2673D28F2C46B75B009D85FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					2673D2962C46B75B009D85FD = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					2673D2AB2C46B85F009D85FD = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 2673D2922C46B75B009D85FD /* Build configuration list for PBXProject "Emoji Chooser" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2673D28E2C46B75B009D85FD;
+			productRefGroup = 2673D2982C46B75B009D85FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2673D2962C46B75B009D85FD /* Emoji Chooser */,
+				2673D2AB2C46B85F009D85FD /* Emoji Keyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2673D2952C46B75B009D85FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2673D2A22C46B75C009D85FD /* Preview Assets.xcassets in Resources */,
+				2673D29F2C46B75C009D85FD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2673D2AA2C46B85F009D85FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2673D2932C46B75B009D85FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				262970C62C47F8CF0060B67C /* AppDelegate.swift in Sources */,
+				2673D29D2C46B75B009D85FD /* ContentView.swift in Sources */,
+				2673D29B2C46B75B009D85FD /* Emoji_ChooserApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2673D2A82C46B85F009D85FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				262970C72C47F8CF0060B67C /* AppDelegate.swift in Sources */,
+				2673D2AF2C46B85F009D85FD /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2673D2B22C46B85F009D85FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2673D2AB2C46B85F009D85FD /* Emoji Keyboard */;
+			targetProxy = 2673D2B12C46B85F009D85FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2673D2A32C46B75C009D85FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2673D2A42C46B75C009D85FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2673D2A62C46B75C009D85FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Emoji Chooser/Emoji Chooser.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Emoji Chooser/Preview Content\"";
+				DEVELOPMENT_TEAM = LUZCVNT748;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boopid.Emoji-Chooser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2673D2A72C46B75C009D85FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Emoji Chooser/Emoji Chooser.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Emoji Chooser/Preview Content\"";
+				DEVELOPMENT_TEAM = LUZCVNT748;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boopid.Emoji-Chooser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2673D2B52C46B85F009D85FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Emoji Keyboard/Emoji Keyboard.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LUZCVNT748;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Emoji Keyboard/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Emoji Keyboard";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boopid.Emoji-Chooser.Emoji-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2673D2B62C46B85F009D85FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Emoji Keyboard/Emoji Keyboard.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LUZCVNT748;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Emoji Keyboard/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Emoji Keyboard";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boopid.Emoji-Chooser.Emoji-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2673D2922C46B75B009D85FD /* Build configuration list for PBXProject "Emoji Chooser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2673D2A32C46B75C009D85FD /* Debug */,
+				2673D2A42C46B75C009D85FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2673D2A52C46B75C009D85FD /* Build configuration list for PBXNativeTarget "Emoji Chooser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2673D2A62C46B75C009D85FD /* Debug */,
+				2673D2A72C46B75C009D85FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2673D2B42C46B85F009D85FD /* Build configuration list for PBXNativeTarget "Emoji Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2673D2B52C46B85F009D85FD /* Debug */,
+				2673D2B62C46B85F009D85FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2673D28F2C46B75B009D85FD /* Project object */;
+}
