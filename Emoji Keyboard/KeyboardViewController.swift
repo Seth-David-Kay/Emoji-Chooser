@@ -4,7 +4,7 @@ class KeyboardViewController: UIInputViewController {
 
     var keyboardScrollView: UIScrollView!
     var keyboardStackView: UIStackView!
-    var sharedEmojis: [String] = ["😁","😊","🥰","😔","🥺","😠","🫣","🫡","😑","😴","🫰🏻","🫳🏻","👋🏻","🏃🏻","🏃🏻‍➡️","🪡","🐱","🐹","🐨","🐸","🦆","🐶","🐊","🌪️","🌟","🍇","🧄","🌯","🍜","🥟","🥄","🥢","🖲️","💡","🧭","🎚️","🟤","📿"] // Default emojis
+    var sharedEmojis: [String] = ["␡","😁","😊","🥰","😔","🥺","😠","🫣","🫡","😑","😴","🫰🏻","🫳🏻","👋🏻","🏃🏻","🏃🏻‍➡️","🪡","🐱","🐹","🐨","🐸","🦆","🐶","🐊","🌪️","🌟","🍇","🧄","🌯","🍜","🥟","🥄","🥢","🖲️","💡","🧭","🎚️","🟤","📿"] // Default emojis
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,6 +95,11 @@ class KeyboardViewController: UIInputViewController {
     @objc func didTapButton(_ sender: UIButton) {
         let proxy = textDocumentProxy as UITextDocumentProxy
         let emoji = sender.title(for: .normal) ?? ""
-        proxy.insertText(emoji)
+        if emoji == "␡"{
+            proxy.deleteBackward()
+        }
+        else{
+            proxy.insertText(emoji)
+        }
     }
 }
